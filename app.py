@@ -1,19 +1,19 @@
 import json
 import os
 import streamlit as st
-from modules.string_sizing import calculate_string_limits
-from modules.cable_sizing import calculate_dc_cable, calculate_ac_cable
-from modules.protection_sizing import calculate_protection
-from modules.racking_sizing import calculate_racking_components
-from modules.boq_generator import generate_boq_excel
-from modules.validator import validate_solar_system
+from string_sizing import calculate_string_limits
+from cable_sizing import calculate_dc_cable, calculate_ac_cable
+from protection_sizing import calculate_protection
+from racking_sizing import calculate_racking_components
+from boq_generator import generate_boq_excel
+from validator import validate_solar_system
 
 st.set_page_config(page_title="Solar PV BOQ System", layout="wide")
 st.title("ระบบถอดปริมาณงาน BOQ สำหรับ Solar PV")
 
 # 1. โหลดข้อมูล Catalog
 try:
-    with open('data/catalog.json', 'r', encoding='utf-8') as f:
+   with open('catalog.json', 'r', encoding='utf-8') as f:
         catalog = json.load(f)
 except Exception as e:
     st.error(f"ไม่สามารถอ่าน catalog.json ได้: {e}")
