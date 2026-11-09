@@ -1,0 +1,67 @@
+{
+  "pv_modules": [
+    {
+      "id": "pv_jinko_575",
+      "brand": "Jinko Solar",
+      "model": "JKM575N-72HL4-V",
+      "p_max_w": 575,
+      "v_oc_v": 50.88,
+      "i_sc_a": 14.31,
+      "v_mp_v": 42.22,
+      "i_mp_a": 13.62,
+      "temp_coeff_voc_percent_c": -0.25,
+      "temp_coeff_pmax_percent_c": -0.30,
+      "max_series_fuse_rating_a": 25,
+      "unit_price_thb": 3100
+    },
+    {
+      "id": "pv_longi_550",
+      "brand": "LONGi Solar",
+      "model": "LR5-72HPH-550M",
+      "p_max_w": 550,
+      "v_oc_v": 49.80,
+      "i_sc_a": 13.98,
+      "v_mp_v": 41.95,
+      "i_mp_a": 13.11,
+      "temp_coeff_voc_percent_c": -0.27,
+      "temp_coeff_pmax_percent_c": -0.34,
+      "max_series_fuse_rating_a": 25,
+      "unit_price_thb": 2900
+    }
+  ],
+  "inverters": [
+    {
+      "id": "inv_huawei_5k",
+      "brand": "Huawei",
+      "model": "SUN2000-5KTL-L1 (1-Phase)",
+      "rated_ac_power_kw": 5.0,
+      "max_dc_voltage_v": 600,
+      "mppt_voltage_range_v": [90, 560],
+      "max_mppt_current_a": 12.5,
+      "num_mppt": 2,
+      "unit_price_thb": 31000
+    },
+    {
+      "id": "inv_huawei_10k",
+      "brand": "Huawei",
+      "model": "SUN2000-10KTL-M1 (3-Phase)",
+      "rated_ac_power_kw": 10.0,
+      "max_dc_voltage_v": 1100,
+      "mppt_voltage_range_v": [140, 980],
+      "max_mppt_current_a": 13.5,
+      "num_mppt": 2,
+      "unit_price_thb": 42000
+    },
+    {
+      "id": "inv_sungrow_50k",
+      "brand": "Sungrow",
+      "model": "SG50CX (3-Phase)",
+      "rated_ac_power_kw": 50.0,
+      "max_dc_voltage_v": 1100,
+      "mppt_voltage_range_v": [200, 1000],
+      "max_mppt_current_a": 30.0,
+      "num_mppt": 5,
+      "unit_price_thb": 115000
+    }
+  ]
+}
